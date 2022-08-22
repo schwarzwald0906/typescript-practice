@@ -23,7 +23,11 @@ export default function App() {
     <div className="App">
       <button onClick={onClickData}>データ取得</button>
       {todos.map((todo) => (
-        <Todo title={todo.title} userId={todo.userId} />
+        <Todo
+          title={todo.title}
+          userId={todo.userId}
+          completed={todo.completed}
+        />
       ))}
     </div>
   );
